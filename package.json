@@ -1,0 +1,15 @@
+{
+  "name": "rotate.js",
+  "version": "0.0.1",
+  "description": "rotate image",
+  "keywords": [],
+  "author": "i5ting <i5ting@126.com>",
+  "repository": { "type": "git", "url": "git://github.com/sang/rotate.js.git" },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "should": "*"
+  },
+  "main": "index"
+}
