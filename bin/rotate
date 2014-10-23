@@ -13,7 +13,6 @@ if (!which('phantomjs')) {
   exit(1);
 }
 
-// var result_html_dir = process.cwd() + '/result.html';
 var result_html_dir ='/var/tmp/result.html';
 rm('-rf', result_html_dir);
 
@@ -47,8 +46,6 @@ program.parse(process.argv);
 // console.log(program);
 if(program.src){
 	src = program.src;
-
-
 	src = path.normalize(src);
 	// -s '/var/tmp/test.png' 
 	// -s 'test.png' 
@@ -58,11 +55,8 @@ if(program.src){
 	// if(src.split('./').length == 0){
 	//
 	// }
-	
-	src = path.resolve(process.cwd(),src)
 
-	
-	
+	src = path.resolve(process.cwd(),src)
 }
 
 
@@ -86,38 +80,21 @@ function log(str){
 	}
 }
 
-// phantomjs simple.js test.jpg
-
 log(' src  - %s ',src);
 log(' dest - %s ', dest);
 log( degree);
- 
  
 
 var lib_dir = __dirname.split('/')
 lib_dir.pop();
 lib_dir.push('lib');
 
-log(__dirname);
-// lib_dir = lib_dir.join('/');
-
-
-// var source = "<p>Hello, my name is {{name}}. I am from {{hometown}}. I have " +
-//              "{{kids.length}} kids:</p>" +
-//              "<ul>{{#kids}}<li>{{name}} is {{age}}</li>{{/kids}}</ul>";
-// var template = Handlebars.compile(source);
-//
-// var data = { "name": "Alan", "hometown": "Somewhere, TX",
-//              "kids": [{"name": "Jimmy", "age": "12"}, {"name": "Sally", "age": "4"}]};
-// var result = template(data);
-//
- 
+log(__dirname); 
 log('Starting directory: ' + process.cwd());
  
 
 var rs = fs.createReadStream(lib_dir.join('/') +'/tmpl.html', {encoding: 'utf-8', bufferSize: 11}); 
 var bufferHelper = new BufferHelper();
-
 
 rs.on("data", function (trunk){
 		bufferHelper.concat(trunk);
@@ -127,14 +104,12 @@ rs.on("end", function () {
 	var source = bufferHelper.toBuffer().toString();
 	var template = Handlebars.compile(source);
 	
-	// console.log(source);
-	var data1 = {
+	var data = {
 		"src": src
 	};
 
-	var contents = new Buffer( template(data1) );
+	var contents = new Buffer( template(data) );
 	
-	//console.log(template(data1));
 	
   fs.writeFile(result_html_dir ,contents ,function(err){
          if(err) throw err;
