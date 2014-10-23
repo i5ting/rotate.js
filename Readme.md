@@ -65,6 +65,7 @@ Rotate.rotate(src,dest,degree,function(src,dest){
 
 ## History
 
+- v0.0.7 export api with callback
 - v0.0.6 整理代码
 - v0.0.5 export api
 - v0.0.2 doc
