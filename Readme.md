@@ -7,9 +7,10 @@
 ## Install
 
 	 npm install -g phantomjs
-	 npm install rotate.js
+	 npm install -g rotate.js
  
-	
+在天朝安装phantomjs需要翻墙，所以暂时没有放到依赖里
+
 ## Usage 
 ```
 ➜  rotate.js git:(master) ✗ node bin/rotate.js  -h                            
