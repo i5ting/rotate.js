@@ -1,7 +1,7 @@
 {
-  "name": "rotate.js",
+  "name": "rotate-lite",
   "version": "0.0.3",
-  "description": "a npm for rotate image",
+  "description": "a npm for rotate image,you must install phantomjs before",
   "keywords": ["utils","rotate","image","image utils","gulp","rotate image"],
   "author": "i5ting <i5ting@126.com>",
   "repository": {
@@ -16,7 +16,7 @@
   },
   "preferGlobal": "true",
   "bin": {
-    "rotate": "bin/rotate"
+    "rotate-lite": "bin/rotate"
   },
   "devDependencies": {
     "mocha": "*",

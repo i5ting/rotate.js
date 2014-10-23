@@ -1,5 +1,5 @@
 
-# rotate.js
+# rotate.js lite version
 
  a npm for rotate image
  
