@@ -93,33 +93,4 @@ log(__dirname);
 log('Starting directory: ' + process.cwd());
  
 
-var rs = fs.createReadStream(lib_dir.join('/') +'/tmpl.html', {encoding: 'utf-8', bufferSize: 11}); 
-var bufferHelper = new BufferHelper();
-
-rs.on("data", function (trunk){
-		bufferHelper.concat(trunk);
-});
-
-rs.on("end", function () {
-	var source = bufferHelper.toBuffer().toString();
-	var template = Handlebars.compile(source);
-	
-	var data = {
-		"src": src
-	};
-
-	var contents = new Buffer( template(data) );
-	
-	
-  fs.writeFile(result_html_dir ,contents ,function(err){
-         if(err) throw err;
-         
-				 log('template html has finished'); 
-				 
-
-				
-				Rotate.rotate(src,dest,degree);
-				
-     });
-	
-});
+Rotate.rotate(src,dest,degree);
