@@ -58,6 +58,7 @@ Rotate.rotate(src,dest,degree);
 
 ## History
 
+- v0.0.6 整理代码
 - v0.0.5 export api
 - v0.0.2 doc
 - v0.0.1 init
