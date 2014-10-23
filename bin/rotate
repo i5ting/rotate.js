@@ -28,7 +28,7 @@ function list(val) {
 }
 
 program
-    .version('0.0.4')
+    .version('0.0.5')
     .usage(" -s 'input.png' -t 'out.png' -d 1")
     .option('-s, --src [value]', '原图片名称')
     .option('-t, --dest [value]', '生成后的图片名称')
