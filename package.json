@@ -4,8 +4,19 @@
   "description": "rotate image",
   "keywords": [],
   "author": "i5ting <i5ting@126.com>",
-  "repository": { "type": "git", "url": "git://github.com/sang/rotate.js.git" },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/i5ting/rotate.js.git"
+  },
   "dependencies": {
+    "bufferhelper": "^0.2.0",
+    "commander": "^2.4.0",
+    "handlebars": "^2.0.0",
+    "shelljs": "^0.3.0"
+  },
+  "preferGlobal": "true",
+  "bin": {
+    "node_rotate": "lib/exec.js"
   },
   "devDependencies": {
     "mocha": "*",
