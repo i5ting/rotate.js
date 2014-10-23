@@ -1,8 +1,15 @@
 {
   "name": "rotate.js",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "a npm for rotate image",
-  "keywords": ["utils","rotate","image","image utils","gulp","rotate image"],
+  "keywords": [
+    "utils",
+    "rotate",
+    "image",
+    "image utils",
+    "gulp",
+    "rotate image"
+  ],
   "author": "i5ting <i5ting@126.com>",
   "repository": {
     "type": "git",
@@ -12,6 +19,7 @@
     "bufferhelper": "^0.2.0",
     "commander": "^2.4.0",
     "handlebars": "^2.0.0",
+    "phantomjs": "^1.9.11",
     "shelljs": "^0.3.0"
   },
   "preferGlobal": "true",
