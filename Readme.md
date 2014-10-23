@@ -9,7 +9,7 @@ a npm for rotate image
 
 ## TODO
 
-- [ ] export api
+- [x] export api
 - [ ] support stream
 
 ## Install
