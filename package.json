@@ -1,6 +1,6 @@
 {
   "name": "rotate.js",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "a npm for rotate image",
   "keywords": ["utils","rotate","image","image utils","gulp","rotate image"],
   "author": "i5ting <i5ting@126.com>",
@@ -16,7 +16,7 @@
   },
   "preferGlobal": "true",
   "bin": {
-    "node_rotate": "lib/exec.js"
+    "rotate": "bin/rotate"
   },
   "devDependencies": {
     "mocha": "*",
