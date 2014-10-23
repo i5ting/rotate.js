@@ -15,7 +15,7 @@
 ```
 ➜  rotate.js git:(master) ✗ node bin/rotate.js  -h                            
 
-  Usage: rotate  -s 'input.png' -t 'out.png' -d 1
+  Usage: rotate-lite  -s 'input.png' -t 'out.png' -d 1
 
   Options:
 
@@ -30,12 +30,26 @@
 
 精简用法
 
-	rotate  -s 'input.png'
+	rotate-lite  -s 'input.png'
 
 ## History
 
 - v0.0.2 doc
 - v0.0.1 init
+
+
+## Contributing
+
+1. Fork it
+2. Create your feature branch (`git checkout -b my-new-feature`)
+3. Commit your changes (`git commit -am 'Add some feature'`)
+4. Push to the branch (`git push origin my-new-feature`)
+5. Create new Pull Request
+
+## 欢迎fork和反馈
+
+在issue提问或邮件shiren1118@126.com
+
 
 ## License 
 
