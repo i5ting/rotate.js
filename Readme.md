@@ -2,6 +2,8 @@
 
 a npm for rotate image
 
+[![NPM version](https://badge.fury.io/js/rotate.js.svg)](http://badge.fury.io/js/rotate.js)
+
 目前提供2个版本
  
 - rotate（此版本需要phantomjs作为依赖）
