@@ -6,7 +6,7 @@ var fs = require('fs');
 var BufferHelper = require('bufferhelper');
 var Handlebars = require('handlebars');
 
-
+var Rotate = require('../index');
 
 if (!which('phantomjs')) {
   echo('Sorry, this script requires phantomjs,please do [sudo]npm install -g phantomjs');
@@ -141,14 +141,10 @@ rs.on("end", function () {
          
 				 log('template html has finished'); 
 				 
-				 degree = 0
-				 // Run external tool synchronously
-				 if (exec('phantomjs '+lib_dir.join('/')+'/rotate_for_phantom.js ' + src + ' '  + dest + ' '+ degree + ' ' + result_html_dir + ' ' + verbose).code !== 0) {
-				   echo('Error: rotate it failed');
-				   exit(1);
-				 }
-				 echo('Success rotate it'); // '/usr'
-				 // rm('-rf', result_html_dir);
+
+				
+				Rotate.rotate(src,dest,degree);
+				
      });
 	
 });

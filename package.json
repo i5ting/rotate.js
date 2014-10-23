@@ -30,5 +30,9 @@
     "mocha": "*",
     "should": "*"
   },
+  "scripts": {
+    "start": "npm publish .",
+    "test": "node bin/rotate -s test.png -t sang.png 1"
+  },
   "main": "index"
 }

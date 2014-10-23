@@ -38,6 +38,21 @@ a npm for rotate image
 精简用法
 
 	rotate  -s 'input.png'
+	
+## Code 
+
+see example.js
+
+```
+var Rotate = require('rotate.js');
+
+var src    = 'test.png'
+var dest   = 'example_out.png'
+var degree = 1
+
+Rotate.rotate(src,dest,degree);
+```
+
 
 ## History
 
