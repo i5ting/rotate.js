@@ -28,18 +28,12 @@ function list(val) {
 }
 
 program
-    .version('0.0.1')
+    .version('0.0.2')
     .usage(" -s 'input.png' -t 'out.png' -d 1")
     .option('-s, --src [value]', '原图片名称')
     .option('-t, --dest [value]', '生成后的图片名称')
     .option('-d, --degree [value]', '旋转角度，0代表正常，1代表旋转90度，2代表180度，3代表270度', parseInt)
     .option('-v, --verbose', '打印详细日志')
-// program
-//     .command('deploy ')
-//     .description('rotate image')
-//     .action(function(name){
-//         console.log('Deploying "%s"', name);
-//     });
 
 var src = "input.png";
 var dest = "out.png";

@@ -1,7 +1,40 @@
 
 # rotate.js
 
-  rotate image
+ a npm for rotate image
+ 
+
+## Install
+
+	 npm install -g phantomjs
+	 npm install rotate.js
+ 
+	
+## Usage 
+```
+➜  rotate.js git:(master) ✗ node bin/rotate.js  -h                            
+
+  Usage: rotate  -s 'input.png' -t 'out.png' -d 1
+
+  Options:
+
+    -h, --help            output usage information
+    -V, --version         output the version number
+    -s, --src [value]     原图片名称
+    -t, --dest [value]    生成后的图片名称
+    -d, --degree [value]  旋转角度，0代表正常，1代表旋转90度(默认值)，2代表180度，3代表270度
+    -v, --verbose         打印详细日志
+
+```
+
+精简用法
+
+	rotate  -s 'input.png'
+
+## History
+
+- v0.0.2 doc
+- v0.0.1 init
 
 ## License 
 
