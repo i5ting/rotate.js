@@ -1,14 +1,21 @@
-
 # rotate.js
 
- a npm for rotate image
+a npm for rotate image
+
+目前提供2个版本
  
+- rotate（此版本需要phantomjs作为依赖）
+- rotate-lite(在分支里，在天朝安装phantomjs需要翻墙，所以lite版本需要自己先安装phantomjs)
+
+## TODO
+
+- [ ] export api
+- [ ] support stream
 
 ## Install
-
+	
 	 npm install -g rotate.js
  
-在天朝安装phantomjs需要翻墙，所以暂时没有放到依赖里
 
 ## Usage 
 
