@@ -1,8 +1,8 @@
 {
   "name": "rotate.js",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "a npm for rotate image",
-  "keywords": [],
+  "keywords": ["utils","rotate","image","image utils","gulp","rotate image"],
   "author": "i5ting <i5ting@126.com>",
   "repository": {
     "type": "git",
